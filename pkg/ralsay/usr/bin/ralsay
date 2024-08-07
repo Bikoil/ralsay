@@ -1,4 +1,4 @@
-#!/usr/bin/lua
+#!/usr/bin/env lua
 
 -- Function to wrap text to a specified width
 function wrap_text(text, width)
