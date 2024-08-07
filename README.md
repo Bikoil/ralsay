@@ -35,18 +35,16 @@ cd .. && rm -rf ralsay
 ```
 
 ### Unix/Other Linux Distros
-
-- First, make sure lua is installed
+- Simply run the `install.sh` file
 ```sh
-# For debian
-sudo apt install lua
-# For fedora
-sudo dnf install lua
-# For MacOS
-brew install lua
-# For FreeBSD
-sudo pkg install lua
+sh install.sh
 ```
+
+### Unsupported OS's
+- If you got `Unknown operating system, please build it by hand` error, then follow this guide
+- **Do note that there is no windows support as of right now**
+- Firstly, depending on your package manager, install lua from it if available
+
 - Then change the name of the `ralsay.lua` file
 ```sh
 mv ralsay.lua ralsay
@@ -55,7 +53,7 @@ mv ralsay.lua ralsay
 ```sh
 chmod +x ralsay
 ```
-- Then finally copy the file to `/usr/local/bin`
+- Then finally copy the file to `/usr/local/bin` or a folder where you are able to execute files from
 ```sh
 sudo cp ralsay /usr/local/bin/
 ```
