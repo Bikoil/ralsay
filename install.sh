@@ -37,7 +37,8 @@ check_os() {
         esac
     elif [ -f /etc/freebsd-version ]; then
         # Check for FreeBSD
-        echo "FreeBSD"
+        echo "-> Installing lua via pkg..."
+        build_pkg
     elif [ "$(uname)" = "Darwin" ]; then
         # Check for macOS
         echo "-> Installing lua via brew..."
