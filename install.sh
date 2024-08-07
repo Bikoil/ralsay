@@ -13,7 +13,7 @@ build_pkg() {
 
 # Function to check the OS
 check_os() {
-    if [ -f /etc/freebsd-version ]; then
+    if [ "$(uname)" = "FreeBSD" ]; then
         # Check for FreeBSD
         echo "-> Installing lua via pkg..."
         sudo pkg install lua
