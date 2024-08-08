@@ -15,8 +15,10 @@ build_pkg() {
 check_os() {
     if [ "$(uname)" = "FreeBSD" ]; then
         # Check for FreeBSD
-        echo "-> Installing lua via pkg..."
+        echo "-> Installing lua53 via pkg..."
         sudo pkg install lua53
+        echo "-> Creating symlink for lua53"
+        sudo ln -s /usr/local/bin/lua53 /usr/local/bin/lua
         build_pkg
     elif [ "$(uname)" = "Darwin" ]; then
         # Check for macOS
