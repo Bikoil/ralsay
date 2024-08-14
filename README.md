@@ -58,3 +58,4 @@ chmod +x ralsay
 sudo cp ralsay /usr/local/bin/
 ```
 
+// Original ASCII art is from [this Reddit post](https://www.reddit.com/r/ralsei/comments/qgdpv5/ascii_ralsei/)
