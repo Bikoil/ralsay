@@ -29,25 +29,25 @@ end
 function ralsay(text)
     -- Define the ASCII art
     local art = [[
-           -^- 
-       _/\/_  \/\_
-      (____ ))____)
-       / -     - \
-      / ( ^)-(^ ) \
-     / ____v-v____ \
-     \(-    _-  __)/
-       \-  -__---/
-       /  / V \   \
-      /__/\   /    \
-     =      V       =
-   _=_              _=_
-     -=---______---=-
-        _| | | |_
-       (___- -___)
+        -^-
+    _/\/_  \/\_
+   (____ ))____)
+    / -     - \
+   / ( ^)-(^ ) \
+  / ____v-v____ \
+  \(-    _-  __)/
+    \-  -__---/
+    /  / V \   \
+   /__/\   /    \
+  =      V       =
+_=_=              _=_
+  -=---______---=-
+     _| | | |_
+    (___- -___)
     ]]
 
     -- Set a reasonable initial maximum width for wrapping
-    local initial_width = 40
+    local initial_width = 20
 
     -- Wrap the text and find the maximum line length
     local wrapped_text = wrap_text(text, initial_width)
@@ -71,9 +71,10 @@ function ralsay(text)
         io.write("| " .. line .. string.rep(" ", box_width - #line - 2) .. " |\n")
     end
 
-    -- Print the bottom border of the speech bubble
-    io.write("\\" .. string.rep(" ", box_width) .. "/\n")
-    io.write(" " .. string.rep("=", box_width) .. "\n")
+    -- Print the bottom border of the speech bubble with the tail
+    io.write("\\" .. string.rep("_", box_width) .. "/\n")
+    io.write(" \\ / \n")
+    io.write("  v \n")
 
     -- Print the ASCII art
     io.write(art .. "\n")
