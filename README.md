@@ -47,7 +47,7 @@ sh install.sh
 
 - Then change the name of the `ralsay.lua` file
 ```sh
-mv ralsay.lua ralsay
+mv src/ralsay.lua ./ralsay
 ```
 - Make it executable
 ```sh
