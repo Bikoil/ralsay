@@ -45,11 +45,13 @@ check_os() {
                 build_pkg
                 ;;
             *)
-                echo "Unknown Linux distribution, please build it by hand"
+                echo "-! Unknown Linux distribution, Building PKG..."
+                build_pkg
                 ;;
         esac
     else
-        echo "Unknown operating system, please build it by hand"
+        echo "-! Unknown operating system, Running POSIX sh build PKG..."
+	build_pkg
     fi
 }
 
