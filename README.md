@@ -61,4 +61,4 @@ sudo cp ralsay /usr/local/bin/
 // Original ASCII art is from [this Reddit post](https://www.reddit.com/r/ralsei/comments/qgdpv5/ascii_ralsei/)
 
 ## Wanna try out other tools like cowsay?
-- Go ahead and try out other ones like [tetosay](https://github.com/makichiis/tetosay) with kasane teto or [catsay](https://github.com/sdx6/catsay) with cats :3! it'd be nice if you supported their projects as well.
+- Go ahead and try out other ones like [tetosay](https://github.com/makichiis/tetosay) with kasane teto or [catsay](https://github.com/sdx6/catsay) with cats :3! it'd be nice if you supported their projects as well!
